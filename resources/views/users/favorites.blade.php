@@ -1,3 +1,4 @@
+@if (count($microposts) > 0)
 <ul class="media-list">
 @foreach ($microposts as $micropost)
     <?php $user = $micropost->user; ?>
@@ -25,3 +26,4 @@
 @endforeach
 </ul>
 {!! $microposts->render() !!}
+@endif
